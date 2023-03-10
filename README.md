@@ -14,6 +14,7 @@ Korzystam z bibliotek [Tailwind_CSS] aby nie skupiać się na stylowaniu wygląd
 
 ### Użyte biblioteki
 - [Tailwind_CSS]
+- [fullPage.js]
 
 #### Spis treści
 - ...
