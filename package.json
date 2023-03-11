@@ -4,7 +4,7 @@
     "description": "## Autor - [Grzegorz_Kocik]",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "webpack"
     },
     "author": "Grzegorz Kocik",
     "license": "ISC",
