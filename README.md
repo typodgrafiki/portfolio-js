@@ -5,7 +5,7 @@
 
 ### Wprowadzenie
 Projekt jest jedną ze stron portfolio. Głównie skupiam się w nim na elementach JavaScript. 
-Korzystam z bibliotek [Tailwind_CSS] aby nie skupiać się na stylowaniu wyglądu oraz [fullPage.js]. Design oparty na [Tailwind_CSS] posiłkując się [dribble]
+Korzystam z bibliotek [Tailwind_CSS] aby nie skupiać się na stylowaniu wyglądu. Design oparty na [Tailwind_CSS] posiłkując się [dribble]
 
 ### Technologie
 - HTML

@@ -13,15 +13,47 @@
         <link rel="apple-touch-icon" href="icons/logo192-light.png" media="(prefers-color-scheme: light)" />
         <link rel="apple-touch-icon" href="icons/logo192-dark.png" media="(prefers-color-scheme: dark)" />
         <meta name="robots" content="noindex, nofollow" />
-        
-        <script src="app.js" type="module"></script>
-        
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" type="text/css" href="style.css" /> 
-        <!-- sprawdzic jak  dzialaja bundlery i dodac zamiast powyzej-->
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="./style.css" rel="stylesheet">
+        <script src="dist/bundle.js" defer></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div id="quiz-body" class="section">
+            <div class="container container-small shadow">
+                <div class="card padding-quiz" style="border-radius: 10px 10px 0 0;">
+                    <h2>Question</h2>
+                    <div class="quiz-answers">
+                        <div class="row form-check">
+                            <label for="answer_0">
+                                <input id="answer_0" type="radio" name="answer" data-answer="a" class="form-check-input"  />
+                                <span>Answer</span>
+                            </label>
+                        </div>
+                        <div class="row form-check">
+                            <label for="answer_1">
+                                <input id="answer_1" type="radio" name="answer" data-answer="b" class="form-check-input" />
+                                <span>Answer</span>
+                            </label>
+                        </div>
+                        <div class="row form-check">
+                            <label for="answer_2">
+                                <input id="answer_2" type="radio" name="answer" data-answer="c" class="form-check-input" />
+                                <span>Answer</span>
+                            </label>
+                        </div>
+                        <div class="row form-check">
+                            <label for="answer_3">
+                                <input id="answer_3" type="radio" name="answer" data-answer="d" class="form-check-input" />
+                                <span>Answer</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button id="submit">Głosuj</button>
+            </div>
+        </div>
+        <div class="section">
+            Test xD
+        </div>
     </body>
 </html>

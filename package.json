@@ -4,12 +4,14 @@
     "description": "## Autor - [Grzegorz_Kocik]",
     "main": "index.js",
     "scripts": {
+        "start": "webpack serve",
         "build": "webpack"
     },
     "author": "Grzegorz Kocik",
     "license": "ISC",
-    "dependencies": {
-        "fullpage.js": "^4.0.18",
-        "tailwindcss": "^3.2.7"
+    "devDependencies": {
+        "webpack": "^5.76.1",
+        "webpack-cli": "^5.0.1",
+        "webpack-dev-server": "^4.11.1"
     }
 }

@@ -1,0 +1,74 @@
+ 
+#quiz-body.section
+{
+    background: #d6cfdd;
+    background: -webkit-linear-gradient(to left, #f3e6f0, #d6cfdd);
+    background: linear-gradient(to left, #f3e6f0, #d6cfdd);
+    color: #212121;
+}
+
+#quiz-body.section h1, 
+#quiz-body.section h2, 
+#quiz-body.section h3
+{
+    font-weight: 700;
+    margin: 0 0 17px;
+    font-size: 19px;
+}
+
+#quiz-body.section h3 
+{
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+#quiz-body.section label 
+{
+    cursor: pointer;
+    padding: 4px 0;
+    display: inline-block;
+}
+
+#quiz-body.section label:hover 
+{
+    color: #855f7f;
+}
+
+#quiz-body.section .padding-quiz 
+{
+    padding: 30px 35px;
+}
+
+#quiz-body.section b 
+{
+    font-weight: 700;
+    font-size: 20px;
+    color: #a742b5;
+}
+
+#quiz-body.section button 
+{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #333399, #ff00cc);
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    cursor: pointer;
+}
+
+#quiz-body.section button:hover
+{
+    background: #d302a9;
+    background: -webkit-linear-gradient(to right, #242476, #d302a9);
+    background: linear-gradient(to right, #242476, #d302a9);
+}

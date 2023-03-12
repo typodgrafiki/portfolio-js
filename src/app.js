@@ -1,3 +1,3 @@
-import { test1 } from "./modules/module1.js";
+import { modQuizz } from './modules/modQuizz.js';
 
-console.log(test1);
+modQuizz();

@@ -1,3 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url(./modules/modQuizz.css);
+
+.section
+{
+    min-height: 95dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2cdf2;
+}
+
+.container-small
+{
+    max-width: 450px;
+}
+
+.shadow 
+{
+    padding: 0;
+}
