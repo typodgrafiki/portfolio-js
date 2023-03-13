@@ -16,10 +16,6 @@ errorBtn.addEventListener('click', openError);
 const movie1Btn = document.querySelector('#randomMovieBtn');
 movie1Btn.addEventListener('click', movieRandom);
 
-movieRandom();
-
-
-
 
 
 // preloaderPage
