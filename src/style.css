@@ -1,11 +1,17 @@
 @import url(./modules/modQuizz.css);
 
+body 
+{
+    counter-reset: section;
+}
+
 .section
 {
     min-height: 95dvh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #d2cdf2;
 }
 
@@ -17,4 +23,37 @@
 .shadow 
 {
     padding: 0;
+}
+
+.radius 
+{
+    border-radius: 10px;
+}
+
+.title
+{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.title:before 
+{
+    counter-increment: section;
+    content: counter(section) ". ";
+    opacity: .6;
+    font-weight: 400;
+    margin-right: 7px;
+}
+
+.btn svg 
+{
+    fill: currentColor;
+}
+
+#error-modal
+{
+    position: fixed;
+    inset: 0;
+    background: #2067B2;
+    color: #fff;
 }

@@ -45,7 +45,7 @@ function modQuizz() {
     const answer2El = document.querySelector('label[for=answer_1] span');
     const answer3El = document.querySelector('label[for=answer_2] span');
     const answer4El = document.querySelector('label[for=answer_3] span');
-    const questionBody = document.querySelector('#quiz-body');
+    const questionBody = document.querySelector('#quiz-body .container');
     let numberQuestions = 0;
     const submit = document.querySelector('#submit');
     const answers = document.querySelectorAll('input[type="radio"]');
@@ -70,7 +70,7 @@ function modQuizz() {
     }
 
     function showScore(){
-        questionBody.innerHTML = `<div class='container container-small shadow'><div class="card padding-quiz"><h3>Twój wynik to <b>${score} pkt</b> na ${answers.length+1} możliwych</h3></div><button onclick='location.reload()' class='btn btn-primary'>Zacznij od nowa</button></div>`;
+        questionBody.innerHTML = `<div class="card padding-quiz"><h3>Twój wynik to <b>${score} pkt</b> na ${answers.length+1} możliwych</h3></div><button onclick='location.reload()' class='btn btn-primary'>Zacznij od nowa</button>`;
     }
 
     function addPoints() {

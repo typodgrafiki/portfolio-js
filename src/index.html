@@ -18,8 +18,12 @@
         <script src="dist/bundle.js" defer></script>
     </head>
     <body>
+        <div class="loading-site">
+            
+        </div>
         <div id="quiz-body" class="section">
-            <div class="container container-small shadow">
+            <p class="title">Szybki Quizz</p>
+            <div class="container container-small shadow radius">
                 <div class="card padding-quiz" style="border-radius: 10px 10px 0 0;">
                     <h2>Question</h2>
                     <div class="quiz-answers">
@@ -53,7 +57,75 @@
             </div>
         </div>
         <div class="section">
-            Test xD
+            <p class="title">
+                Buttony Po kliknięciu z akcją loading np
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                Pobieranie danych z API po kliknięciu przycisku
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                Metody Array map itd
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                Elementy flex lub grid. Po kliknieciu np zmienia sie uklad czy cos sie powieksza
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                Aplikacja lista filmów do obejrzenia
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                Canvas - narysuj coś
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                ...
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                Zmień kolor tej sekcji
+            </p>
+        </div>
+        <div class="section">
+            <p class="title">
+                Nie klikaj tego przycisku
+            </p>
+            <div>
+                <button id="errorBtn" class="btn btn-primary">
+                    Kliknij mnie
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" style="   margin-left: 6px;position: relative;top: -1px;">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21ZM11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.14648 11.3536L5.64648 7.85356L6.35359 7.14645L9.85359 10.6465L9.14648 11.3536Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1465 11.3536L12.6465 7.85356L13.3536 7.14645L16.8536 10.6465L16.1465 11.3536Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.64641 10.6465L9.14641 7.14645L9.85352 7.85356L6.35352 11.3536L5.64641 10.6465Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6464 10.6465L16.1464 7.14645L16.8535 7.85356L13.3535 11.3536L12.6464 10.6465Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 14.5H4.5V13.5H17.5V14.5H16.5V16C16.5 17.3807 15.3807 18.5 14 18.5C12.6193 18.5 11.5 17.3807 11.5 16V14.5ZM12.5 14.5V16C12.5 16.8284 13.1716 17.5 14 17.5C14.8284 17.5 15.5 16.8284 15.5 16V14.5H12.5Z" />
+                    </svg>                        
+                </button>
+                <template id="errorTemplate">
+                    <div id="error-modal" class="modalx">
+                        IMG 
+                        <p>
+                            Your PC ran into a problem and needs to restart. We're just collecting some error info, and then we'll restart for you. (0% complete)
+                        </p>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="section">
+            <p class="title">
+                ...
+            </p>
         </div>
     </body>
 </html>
