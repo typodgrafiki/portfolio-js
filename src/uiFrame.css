@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --radius: 10px;
+    --primaryColor: #5575EB;
+    --primaryColorDark: #4462d1;
+    --darkColor: #161819;
+    --darkColorLight: #242529;
+    --lightColor: #e8e8eb;
+    /* --- */
+    --bgColor: var(--lightColor);
+    --textColor: var(--darkColor);
+    
+}
+
+/* reset -> */
+*, *:before, *:after 
+{
+    box-sizing: border-box;    
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* <- reset */
+
+body 
+{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.bold 
+{
+    font-weight: 700;
+}
+
+.italic 
+{
+    font-style: italic;
+}
+
+.panel 
+{
+    background-color: #fff;
+}
+
+.panel-body 
+{
+    padding: 20px 25px;
+}
+
+.radius
+{
+    border-radius: var(--radius);
+}
+
+.radius-bottom   
+{
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.block
+{
+    display: block;
+}
+
+.wide
+{
+    width: 100%;
+}
+
+.shadow 
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.text-left 
+{
+    text-align: left;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
+.form-input 
+{
+    width: 100%;
+    display: block;
+    height: 43px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+}
+
+.form-input::placeholder
+{
+    transition: inherit;
+}
+
+.form-input:focus::placeholder
+{
+    opacity: .3;    
+}
+
+.row-form > .form-input.radius
+{
+    border-radius: var(--radius) 0 0 var(--radius);    
+}
+
+.row-form > .btn.radius
+{
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin-left: -1px;
+}
+
+.flex 
+{
+    display: flex;
+}
+
+.flex-column
+{
+    flex-direction: column;
+}
+
+.flex-align-center
+{
+    align-items: center;
+}
+
+.flex-align-start
+{
+    align-items: flex-start;
+}
+
+.flex-align-end
+{
+    align-items: flex-end;
+}
+
+.flex-align-self-start
+{
+    align-self: flex-start;
+}
+
+.flex-align-self-end
+{
+    align-self: flex-end;
+}
+
+.gap1 
+{
+    gap: 10px;
+}
+
+.gap2
+{
+    gap: 20px;
+}
+
+svg.stroke
+{
+    stroke: currentColor;
+}
+
+svg.fill 
+{
+    fill: currentColor;
+}
+
+.fade 
+{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.transition
+{
+    transition: all .3s ease;
+}
+
+.h1, .h2, .h3, .h4, .h5
+{
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.h1 
+{
+    font-size: 2rem;
+}
+
+.h2 
+{
+    font-size: 1.5714rem;
+}
+
+.h3
+{
+    font-size: 1.3571rem;
+}
+
+.h4
+{
+    font-size: 1.2143rem;
+}
+
+.h5
+{
+    font-size: 1.0714rem;
+}
+
+label[for]
+{
+    cursor: pointer;
+}
+
+label[for]:is(:hover)
+{
+    color: var(--primaryColor);
+}
+
+.btn 
+{
+    display: flex;
+    padding: 10px 15px;
+    cursor: pointer;
+    justify-content: center;
+    transition: background-color .3s ease;
+}
+
+.btn-primary
+{
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
+.btn-primary:is(:hover, :focus, :active)
+{
+    background-color: var(--primaryColorDark);
+    color: #fff;
+}
+
+
+
+.darkSection
+{
+    background-color: #cacad1;
+}

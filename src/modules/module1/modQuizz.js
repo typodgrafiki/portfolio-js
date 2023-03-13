@@ -70,7 +70,7 @@ function modQuizz() {
     }
 
     function showScore(){
-        questionBody.innerHTML = `<div class="card padding-quiz"><h3>Twój wynik to <b>${score} pkt</b> na ${answers.length+1} możliwych</h3></div><button onclick='location.reload()' class='btn btn-primary'>Zacznij od nowa</button>`;
+        questionBody.innerHTML = `<div class="panel-body"><h3 class="h3">Twój wynik to <b class="bold primary">${score} pkt</b> na ${answers.length+1} możliwych</h3></div><button onclick='location.reload()' class='btn btn-primary wide radius-bottom'>Zacznij od nowa</button>`;
     }
 
     function addPoints() {
@@ -100,7 +100,7 @@ function modQuizz() {
                 showScore();
             }   
         }else{
-            alert('Wybierz odowiedź.');
+            alert('Wybierz odpowiedź.');
         }
 
     });
