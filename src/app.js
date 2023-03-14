@@ -1,6 +1,6 @@
 import { modQuizz } from './modules/module1/modQuizz.js';
 import openError from './modules/module2/modError.js';
-import { movieRandom } from './modules/module3/movieApi.js'
+import { movieList } from './modules/module3/movieApi.js'
 
 // module1
 modQuizz();
@@ -13,8 +13,24 @@ errorBtn.addEventListener('click', openError);
 
 
 // module3
-const movie1Btn = document.querySelector('#randomMovieBtn');
-movie1Btn.addEventListener('click', movieRandom);
+const movieRandomBtn = document.querySelector('#randomMovieBtn');
+const movieSearchBtn = document.querySelector('#movieSearch .btn');
+const movieSearchInput = document.querySelector('#movieSearch input');
+
+movieRandomBtn.addEventListener('click', (el) => {
+    movieList(el, 'Filmy z najnowszych trendów', 'random');
+});
+
+movieSearchBtn.addEventListener('click', (el) => {
+    movieList(el, 'Wyniki wyszukiwania', movieSearchInput);
+});
+
+movieSearchInput.addEventListener("keyup", (el) => {
+    if (el.key === "Enter") {
+        movieList(el, 'Wyniki wyszukiwania', movieSearchInput);
+    }
+});
+
 
 
 
