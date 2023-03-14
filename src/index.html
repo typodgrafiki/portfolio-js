@@ -91,18 +91,27 @@
         </div>
         <div id="fileUpload" class="section">
             <p class="title h1 bold">
-                Wgrywanie pliku
+                Upload pliku
             </p>
-            <div class="panel panel-body">
-                <p class="h4 bold">Załącz plik z komputera</p>
-                <form id="uploadForm" enctype="multipart/form-data" method="post">
-                    <label for="fileUpload" class="btn btn-dot wide transition">Wybierz plik</label>
-                    <input type="file" id="fileUploadInput" accept="image/png, image/jpeg" class="hidden">
-                    <div class="progress"><div id="progressBar"></div></div>
-                    <button class="btn btn-primary wide" type="submit" disabled>Symuluj przesyłanie</button>
-                    <!-- <h3 id="status"></h3>
-                    <p id="loaded_n_total"></p> -->
-                </form>
+            <div class="flex gap2">
+                <div class="panel panel-body">
+                    <p class="h4 bold">Symulacja</p>
+                    <form id="uploadForm" enctype="multipart/form-data" method="post">
+                        <label for="fileUpload" class="btn btn-dot wide transition">Wybierz plik</label>
+                        <input type="file" id="fileUploadInput" accept="image/png, image/jpeg" class="hidden">
+                        <div class="progress"><div id="progressBar"></div></div>
+                        <button class="btn btn-primary wide" type="submit" disabled>Symuluj przesyłanie</button>
+                    </form>
+                </div>
+                <div class="panel panel-body">
+                    <p class="h4 bold">Upload do chmury</p>
+                    <form id="uploadForm" enctype="multipart/form-data" method="post">
+                        <label for="fileUpload" class="btn btn-dot wide transition">Wybierz plik</label>
+                        <input type="file" id="fileUploadInput" accept="image/png, image/jpeg" class="hidden">
+                        <div class="progress"><div id="progressBar"></div></div>
+                        <button class="btn btn-primary wide" type="submit" disabled>Wyślij</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="section darkSection">
