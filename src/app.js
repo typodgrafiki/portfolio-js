@@ -1,6 +1,8 @@
 import { modQuizz } from './modules/module1/modQuizz.js';
 import openError from './modules/module2/modError.js';
-import { movieList } from './modules/module3/movieApi.js'
+import { movieList } from './modules/module3/movieApi.js';
+import changeColor from './modules/module4/colorPicker.js';
+import fileUpload from './modules/module5/uploadFile.js';
 
 // module1
 modQuizz();
@@ -31,6 +33,12 @@ movieSearchInput.addEventListener("keyup", (el) => {
     }
 });
 
+
+// module4
+changeColor();
+
+// module5
+fileUpload();
 
 
 

@@ -85,3 +85,52 @@ body
 {
     background-color: #cacad1;
 }
+
+.btn.loading
+{
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn.loading:after 
+{
+    content: url('data:image/svg+xml; utf8, <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.63158 0.781473C6.63158 0.356583 6.27391 0.0147095 5.85466 0.0837116C2.53351 0.630323 0 3.51453 0 6.99047C0 10.8565 3.13401 13.9905 7 13.9905C10.4759 13.9905 13.3601 11.457 13.9068 8.13581C13.9758 7.71656 13.6339 7.35889 13.209 7.35889V7.35889C12.8181 7.35889 12.4996 7.66405 12.4253 8.04779C11.9319 10.5941 9.6905 12.5168 7 12.5168C3.9479 12.5168 1.47368 10.0426 1.47368 6.99047C1.47368 4.29997 3.39636 2.05854 5.94268 1.56519C6.32643 1.49084 6.63158 1.17235 6.63158 0.781473V0.781473Z" fill="white"/></svg>');
+    animation: spin 1s linear infinite;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: relative;
+    top: 2px;
+    left: 6px;
+}
+
+.btn-dot 
+{
+    border: 2px dashed #969696;
+    color: inherit;
+}
+
+.btn-dot:is(:hover, :focus, :active)
+{
+    border-color: #c1c1c1;
+    color: #666 !important;
+    background-color: #f4f4f4;
+}
+
+.progress
+{
+    height: 7px;
+    background-color: var(--lightColor);
+    border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    /* background-color: var(--primaryColor); */
+}
+
+.progress > div 
+{
+    background-color: var(--primaryColor);
+    width: 0;
+    border-radius: inherit;
+    transition: all .4s ease;
+}
