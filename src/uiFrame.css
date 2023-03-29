@@ -127,6 +127,11 @@ body
     display: none;
 }
 
+.relative
+{
+    position: relative;
+}
+
 .img-responsive
 {
     max-width: 100%;
@@ -252,9 +257,24 @@ input[disabled], button[disabled]
     display: grid;
 }
 
+.grid_col_2
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_col_3
+{
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .grid_col_4
 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid_col_5
+{
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .gap1 

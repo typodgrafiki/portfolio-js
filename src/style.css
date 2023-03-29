@@ -24,7 +24,7 @@ body
 
 .title
 {
-    margin-bottom: 3vh;
+    margin-bottom: 35px;
 }
 
 .title:before 
@@ -34,6 +34,18 @@ body
     opacity: .6;
     font-weight: 400;
     margin-right: 7px;
+}
+
+.ar1-1
+{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+#gridSection .grid
+{
+    margin-bottom: 25px;    
 }
 
 #error-modal
@@ -133,4 +145,30 @@ body
     width: 0;
     border-radius: inherit;
     transition: all .4s ease;
+}
+
+#video-container video
+{
+    position: absolute;
+    inset: 0;    
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+#video-container .title 
+{
+    z-index: 1;
+}
+
+.grid_col_5-first-2-2
+{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid_col_5-first-2-2 > .panel:nth-child(1)
+{
+    grid-column: span 2;
+    grid-row: span 2;
 }

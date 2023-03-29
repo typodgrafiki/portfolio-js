@@ -3,6 +3,8 @@ import openError from './modules/module2/modError.js';
 import { movieList } from './modules/module3/movieApi.js';
 import changeColor from './modules/module4/colorPicker.js';
 import fileUpload from './modules/module5/uploadFile.js';
+import { observer, backgroundVideo } from './modules/module6/video.js';
+import gridFn from './modules/module7/grid.js';
 
 // module1
 modQuizz();
@@ -40,6 +42,11 @@ changeColor();
 // module5
 fileUpload();
 
+// module6
+observer.observe(backgroundVideo);
+
+// module7
+gridFn();
 
 
 // preloaderPage
