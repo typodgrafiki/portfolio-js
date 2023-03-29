@@ -6,6 +6,7 @@ import fileUpload from './modules/module5/uploadFile.js';
 import { observer, backgroundVideo } from './modules/module6/video.js';
 import gridFn from './modules/module7/grid.js';
 
+
 // module1
 modQuizz();
 
@@ -47,6 +48,9 @@ observer.observe(backgroundVideo);
 
 // module7
 gridFn();
+
+//module8
+
 
 
 // preloaderPage

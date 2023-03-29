@@ -95,7 +95,7 @@ body
 
 .darkSection
 {
-    background-color: #cacad1;
+    background-color: #d8d8de;
 }
 
 .btn.loading
@@ -171,4 +171,70 @@ body
 {
     grid-column: span 2;
     grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid_col_5-first-2-2 > .panel:nth-child(1) .panel-body 
+{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.grid_col_5-first-2-2 > .panel:nth-last-child(1)
+{
+    display: none;
+}
+
+#gridSection .image img 
+{
+    width: 100%;
+}
+
+.grid_col_custom
+{
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid_col_custom > .panel:nth-child(2),
+.grid_col_custom > .panel:nth-child(8)
+{
+    grid-column: span 2;
+}
+
+.grid_col_custom > .panel:nth-child(2) .image img ,
+.grid_col_custom > .panel:nth-child(8) .image img 
+{
+    aspect-ratio: calc(2/1 * 1.023);
+}
+
+.grid_col_custom > .panel:nth-child(3)
+{
+    grid-row: span 3;
+}
+
+.grid_col_custom > .panel:nth-child(3) .image img 
+{
+    aspect-ratio: calc(1/3 * .787);
+}
+
+.grid_col_custom > .panel:nth-child(5)
+{
+    grid-column: span 3;
+}
+
+.grid_col_custom > .panel:nth-child(6)
+{
+    grid-row: span 2;
+}
+
+.grid_col_custom > .panel:nth-child(6) .image img
+{
+    aspect-ratio: calc(1/2 * .83);
+}
+
+.grid_col_custom > .panel:nth-child(5) .image img
+{
+    aspect-ratio: calc(3/1 * 1.023);    
 }
