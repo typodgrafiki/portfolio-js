@@ -373,6 +373,16 @@ label[for]:is(:hover)
     transition: background-color .3s ease;
 }
 
+.btn-default
+{
+    background-color: #e0e1e7;
+}
+
+.btn-default:is(:hover, :focus, :active)
+{
+    background-color: #c8cad5;
+}
+
 .btn-primary
 {
     background-color: var(--primaryColor);
@@ -384,10 +394,6 @@ label[for]:is(:hover)
     background-color: var(--primaryColorDark);
     color: #fff;
 }
-
-
-
-
 
 .loader 
 {

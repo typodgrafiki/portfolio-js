@@ -30,7 +30,7 @@ movieSearchBtn.addEventListener('click', (el) => {
     movieList(el, 'Wyniki wyszukiwania', movieSearchInput);
 });
 
-movieSearchInput.addEventListener("keyup", (el) => {
+movieSearchInput.addEventListener('keyup', (el) => {
     if (el.key === "Enter") {
         movieList(el, 'Wyniki wyszukiwania', movieSearchInput);
     }

@@ -80,6 +80,7 @@ body
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .start-loader
@@ -187,9 +188,15 @@ body
     display: none;
 }
 
+#gridSection .image
+{
+    height: 100%;
+}
+
 #gridSection .image img 
 {
     width: 100%;
+    height: 100%;
 }
 
 .grid_col_custom
@@ -203,20 +210,9 @@ body
     grid-column: span 2;
 }
 
-.grid_col_custom > .panel:nth-child(2) .image img ,
-.grid_col_custom > .panel:nth-child(8) .image img 
-{
-    aspect-ratio: calc(2/1 * 1.023);
-}
-
 .grid_col_custom > .panel:nth-child(3)
 {
     grid-row: span 3;
-}
-
-.grid_col_custom > .panel:nth-child(3) .image img 
-{
-    aspect-ratio: calc(1/3 * .787);
 }
 
 .grid_col_custom > .panel:nth-child(5)
@@ -229,12 +225,23 @@ body
     grid-row: span 2;
 }
 
-.grid_col_custom > .panel:nth-child(6) .image img
+.btn-img-left img,
+.btn-img-left svg
 {
-    aspect-ratio: calc(1/2 * .83);
+    margin-right: 7px;
+    pointer-events: none;
 }
 
-.grid_col_custom > .panel:nth-child(5) .image img
+#fileUpload .panel 
 {
-    aspect-ratio: calc(3/1 * 1.023);    
+    width: 340px;
+}
+
+#fileUpload label 
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    display: block;
 }

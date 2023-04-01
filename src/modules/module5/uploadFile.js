@@ -33,7 +33,6 @@ const fileUpload = () => {
   
     });  
     
-    
 } 
 
 const sendFile = (e) => {
@@ -43,6 +42,7 @@ const sendFile = (e) => {
     let i = 0;
     
     btnSend.classList.add('loading');
+    btnSend.disabled = true;
 
     function progressFn() {
         
@@ -53,13 +53,12 @@ const sendFile = (e) => {
             setTimeout(progressFn, 1000);
         }else{
             btnSend.classList.remove('loading');
-            // const completeInfo = document.querySelector('.');
-            
             btnSend.textContent = 'Wysłano';
-            
-            reset();
+            btnSend.disabled = false;
+            btnSend.style.backgroundColor = '#51bf09';
             
             setTimeout(function(){
+                reset();
                 btnSend.textContent = btnSendText;
             }, 2000);
         }
@@ -73,6 +72,8 @@ const sendFile = (e) => {
 
 const reset = () => {
     customUpload.textContent = customUploadText;
+    progressBar.style.width = 0;
+    btnSend.style.backgroundColor = '';
 }
 
 btnSend.addEventListener('click', sendFile);
