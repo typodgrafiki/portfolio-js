@@ -1,4 +1,4 @@
-const favoriteMoviesLocal = JSON.parse(localStorage.getItem('favoriteMovies'));
+const favoriteMoviesLocal = JSON.parse(localStorage.getItem('favoriteMovies')) || [];
 const favoriteMoviesArrayBlank = [];
 const favoriteMoviesArray = [...favoriteMoviesArrayBlank, ...favoriteMoviesLocal];
 

@@ -204,6 +204,11 @@ body
     grid-template-columns: repeat(5, 1fr);
 }
 
+.grid_col_custom > .panel
+{
+    height: 300px;
+}
+
 .grid_col_custom > .panel:nth-child(2),
 .grid_col_custom > .panel:nth-child(8)
 {
@@ -213,6 +218,7 @@ body
 .grid_col_custom > .panel:nth-child(3)
 {
     grid-row: span 3;
+    height: auto;
 }
 
 .grid_col_custom > .panel:nth-child(5)
@@ -223,6 +229,7 @@ body
 .grid_col_custom > .panel:nth-child(6)
 {
     grid-row: span 2;
+    height: auto;
 }
 
 .btn-img-left img,
@@ -244,4 +251,9 @@ body
     text-overflow: ellipsis;
     text-align: center;
     display: block;
+}
+
+#custom-video-player
+{
+    margin-top: 20px;
 }
