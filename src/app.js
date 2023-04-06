@@ -64,10 +64,12 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
     
-    const usernameCrypt = sha256(username);
+    const usernameCrypt = sha256(username+password);
     
     console.log(usernameCrypt.toString());
     
+    // toJestHaslo:)
+    // d5552d06d3a7324e8f514053cda69679d237f40afe0dc4c0ce8e3da0fb3477d1
 
     if (username === "user" && password === "web_dev") {
         alert("You have successfully logged in.");
