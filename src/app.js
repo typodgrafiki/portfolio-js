@@ -5,8 +5,7 @@ import changeColor from './modules/module4/colorPicker.js';
 import fileUpload from './modules/module5/uploadFile.js';
 import { observer, backgroundVideo } from './modules/module6/video.js';
 import gridFn from './modules/module7/grid.js';
-
-import sha256 from 'crypto-js/sha256';
+import { login, loginButton } from './modules/module9/login.js'
 
 
 // module1
@@ -54,30 +53,10 @@ gridFn();
 //module8
 
 
-
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-// const loginErrorMsg = document.getElementById("login-error-msg");
-
-loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    const username = loginForm.username.value;
-    const password = loginForm.password.value;
-    
-    const usernameCrypt = sha256(username+password);
-    
-    console.log(usernameCrypt.toString());
-    
-    // toJestHaslo:)
-    // d5552d06d3a7324e8f514053cda69679d237f40afe0dc4c0ce8e3da0fb3477d1
-
-    if (username === "user" && password === "web_dev") {
-        alert("You have successfully logged in.");
-        // location.reload();
-    } else {
-        // loginErrorMsg.style.opacity = 1;
-    }
-})
+// module9
+loginButton.addEventListener("click", function(e) {
+    login(e)
+});
 
 
 // preloaderPage

@@ -223,6 +223,11 @@ input[disabled], button[disabled]
     border: none;
 }
 
+.error .form-input
+{
+    border-color: red;
+}
+
 .row-form > .form-input.radius
 {
     border-radius: var(--radius) 0 0 var(--radius);    
@@ -277,6 +282,11 @@ input[disabled], button[disabled]
 .flex-grow
 {
     flex-grow: 1;
+}
+
+.flex-justify-between
+{
+    justify-content: space-between;
 }
 
 .grid 

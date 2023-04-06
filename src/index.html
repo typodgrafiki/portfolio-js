@@ -199,35 +199,6 @@
                 </div>
             </div>
         </div>
-        
-        <div class="section darkSection">
-            <p class="title h1 bold">
-                Logowanie
-            </p>
-            
-            <div class="container container-small panel shadow radius">
-                <div class="panel-body">
-                    <p>Strona wykorzystuje algorytm SHA-256, nie posiada informacji login/password.</p>
-                    
-                    <!-- <div id="login-error-msg-holder">
-                        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-                    </div> -->
-                    
-                    <form id="login-form">
-                        <div class="row-form">
-                            <input type="text" name="username" id="username-field" class="form-input" placeholder="Username">
-                        </div>
-                        <div class="row-form">
-                            <input type="password" name="password" id="password-field" class="form-input" placeholder="Password">
-                        </div>
-                        <div class="row-form">
-                            <button type="submit"  id="login-form-submit" class="btn btn-primary">Zaloguj się</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
         <div id="video-container" class="section darkSection relative">
             <p class="title h1 bold relative">
                 Background Video
@@ -237,6 +208,33 @@
                 This browser doesn't support video tag.
              </video>
         </div>
+        
+        <div id="login" class="section darkSection">
+            <p class="title h1 bold">
+                Logowanie
+            </p>
+            
+            <div class="container container-small panel shadow radius">
+                <div class="panel-body">
+                    <p>Logowanie wykorzystuje algorytm SHA-256, nie posiada informacji login/password.</p>
+                    
+                    <form id="login-form">
+                        <div class="row-form">
+                            <input type="text" name="username" id="username-field" class="form-input" placeholder="Username">
+                        </div>
+                        <div class="row-form">
+                            <input type="password" name="password" id="password-field" class="form-input" placeholder="Password">
+                        </div>
+                        <div class="row-form flex flex-align-center flex-justify-center flex-justify-between">
+                            <button type="submit"  id="login-form-submit" class="btn btn-primary">Zaloguj się</button>
+                            <p id="show-pass" class="underline-hover">Zobacz dane logowania</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
         
         <div class="section">
             <p class="titlt h1 bold">
