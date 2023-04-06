@@ -257,3 +257,14 @@ body
 {
     margin-top: 20px;
 }
+
+.copyright 
+{
+    padding: 10px;
+    color: #606060;
+}
+
+#login-form
+{
+    margin-top: 10px;
+}

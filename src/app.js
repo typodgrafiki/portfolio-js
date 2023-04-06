@@ -6,6 +6,8 @@ import fileUpload from './modules/module5/uploadFile.js';
 import { observer, backgroundVideo } from './modules/module6/video.js';
 import gridFn from './modules/module7/grid.js';
 
+import sha256 from 'crypto-js/sha256';
+
 
 // module1
 modQuizz();
@@ -53,6 +55,29 @@ gridFn();
 
 
 
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+// const loginErrorMsg = document.getElementById("login-error-msg");
+
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+    
+    const usernameCrypt = sha256(username);
+    
+    console.log(usernameCrypt.toString());
+    
+
+    if (username === "user" && password === "web_dev") {
+        alert("You have successfully logged in.");
+        // location.reload();
+    } else {
+        // loginErrorMsg.style.opacity = 1;
+    }
+})
+
+
 // preloaderPage
 const preLoader = () => {
     const loader = document.querySelector('.start-loader');
@@ -63,38 +88,3 @@ const preLoader = () => {
 }
 
 window.addEventListener('load', preLoader);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const video = document.querySelector('#custom-video-player .video-shadow');
-const shadow = video.attachShadow({ mode: 'open' });
-const playButton = document.createElement('button');
-playButton.textContent = 'Play';
-playButton.addEventListener('click', () => {
-if (video.paused) {
-    video.play();
-    playButton.textContent = 'Pause';
-} else {
-    video.pause();
-    playButton.textContent = 'Play';
-}
-});
-shadow.appendChild(playButton);

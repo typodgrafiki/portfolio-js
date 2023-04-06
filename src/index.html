@@ -202,32 +202,33 @@
         
         <div class="section darkSection">
             <p class="title h1 bold">
-                strona logowania i uwierzytelnienie (podac dane do logowania)
-            </p>
-        </div>
-        
-        <div class="section">
-            <p class="titlt h1 bold">
-                <small>Custom</small> Video player
+                Logowanie
             </p>
             
-            <div id="custom-video-player">
-                <video width="760" height="427" class="radius10">
-                    <source src = "./assets/pexels-kelly-2818546-1920x1080-24fps.mp4" type = "video/mp4">
-                    This browser doesn't support video tag.
-                 </video>
-                 <div class="video-shadow"></div>
+            <div class="container container-small panel shadow radius">
+                <div class="panel-body">
+                    <p>Strona wykorzystuje algorytm SHA-256, nie posiada informacji login/password.</p>
+                    
+                    <!-- <div id="login-error-msg-holder">
+                        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                    </div> -->
+                    
+                    <form id="login-form">
+                        <div class="row-form">
+                            <input type="text" name="username" id="username-field" class="form-input" placeholder="Username">
+                        </div>
+                        <div class="row-form">
+                            <input type="password" name="password" id="password-field" class="form-input" placeholder="Password">
+                        </div>
+                        <div class="row-form">
+                            <button type="submit"  id="login-form-submit" class="btn btn-primary">Zaloguj się</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <!-- template shadow https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots -->
-        </div>
-        
-        <div class="section darkSection">
-            <p class="titlt h1 bold">
-                slider
-            </p>
         </div>
 
-        <div id="video-container" class="section relative">
+        <div id="video-container" class="section darkSection relative">
             <p class="title h1 bold relative">
                 Background Video
             </p>
@@ -243,14 +244,8 @@
             </p>
         </div>
         
-        <div class="section darkSection">
-            <p class="titlt h1 bold">
-                web3.0 jakies logowanie metamask
-            </p>
-        </div>
-        
-        <footer>
-            <div className="copyright text-center">
+        <footer class="darkSection">
+            <div class="copyright text-center">
                 &#169; 2023 typodgrafiki.pl &#8226; Grzegorz Kocik &#8226; Front-end developer | UI Designer
             </div>
         </footer>
