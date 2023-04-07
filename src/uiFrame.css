@@ -84,6 +84,16 @@ body
     font-size: 0.9em;
 }
 
+.underline 
+{
+    text-decoration: underline;
+}
+
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
 .panel 
 {
     background-color: #fff;
@@ -446,6 +456,48 @@ label[for]:is(:hover)
     width: 56px;
     height: 56px;
     animation: spin 1s linear infinite;
+}
+
+@media (min-width: 768px) {
+    .flex-sm
+    {
+        display: flex;
+    }
+    
+    .grid_col_2_sm
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid_col_3_sm
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid_col_4_sm
+    {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid_col_5_sm
+    {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .grid_col_6_sm
+    {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .grid_col_7_sm
+    {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .grid_col_8_sm
+    {
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
 
 @keyframes spin {

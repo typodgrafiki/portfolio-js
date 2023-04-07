@@ -79,7 +79,7 @@
             <p class="title h1 bold">
                 CSS Grid - manipulacja
             </p>
-            <div class="grid grid_col_4 gap1">
+            <div class="grid grid_col_2 grid_col_4_sm gap1">
                 <div class="panel shadow radius">
                     <div class="image">
                         <img class="img-responsive ar1-1" src="https://images.unsplash.com/photo-1678365136353-746fec98937b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" width="300" height="300" />
@@ -153,7 +153,7 @@
             </div>
         </div>
 
-        <div class="flex">
+        <div class="flex-sm">
             <div id="changeColor" class="section flex-grow">
                 <p class="title h1 bold">
                     Zmień kolor tej sekcji
@@ -165,7 +165,7 @@
                     </div>    
                 </div>
             </div>
-            <div class="section flex-grow">
+            <div id="error" class="section flex-grow">
                 <p class="title h1 bold">
                     Nie klikaj tego przycisku
                 </p>
@@ -214,10 +214,9 @@
                 Logowanie
             </p>
             
-            <div class="container container-small panel shadow radius">
+            <div class="container container-small panel shadow radius relative">
                 <div class="panel-body">
                     <p>Logowanie wykorzystuje algorytm SHA-256, nie posiada informacji login/password.</p>
-                    
                     <form id="login-form">
                         <div class="row-form">
                             <input type="text" name="username" id="username-field" class="form-input" placeholder="Username">
@@ -225,27 +224,23 @@
                         <div class="row-form">
                             <input type="password" name="password" id="password-field" class="form-input" placeholder="Password">
                         </div>
-                        <div class="row-form flex flex-align-center flex-justify-center flex-justify-between">
+                        <div class="row-form flex flex-align-center flex-justify-center flex-justify-between gap1">
                             <button type="submit"  id="login-form-submit" class="btn btn-primary">Zaloguj się</button>
-                            <p id="show-pass" class="underline-hover">Zobacz dane logowania</p>
+                            <p id="show-pass" class="underline-hover text-right">Zobacz dane logowania</p>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
         
-        
-        <div class="section">
+        <!-- <div class="section">
             <p class="titlt h1 bold">
                 elementy formularza i buttony → proces przejścia od jednego do drugiego po kliknięciu. Po kliknieciu przycisku wczytywanie i przejście do kolejnego kroku.
             </p>
-        </div>
+        </div> -->
         
-        <footer class="darkSection">
-            <div class="copyright text-center">
-                &#169; 2023 typodgrafiki.pl &#8226; Grzegorz Kocik &#8226; Front-end developer | UI Designer
-            </div>
+        <footer class="copyright text-center">
+            &#169; 2023 typodgrafiki.pl &#8226; Grzegorz Kocik &#8226; Front-end developer | UI Designer
         </footer>
         <div class="start-loader transition "><div class="loader"></div></div>
     </body>

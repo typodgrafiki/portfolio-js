@@ -1,5 +1,6 @@
 @import url(./uiFrame.css);
 @import url(./modules/module1/modQuizz.css);
+@import url(./modules/module9/login.css);
 
 body 
 {
@@ -9,12 +10,11 @@ body
 
 .section
 {
-    min-height: 95dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5%;
+    padding: 25% 8%;
 }
 
 .container-small
@@ -25,6 +25,7 @@ body
 .title
 {
     margin-bottom: 35px;
+    text-align: center;
 }
 
 .title:before 
@@ -94,7 +95,8 @@ body
     align-items: center;
 }
 
-.darkSection
+.darkSection,
+#error
 {
     background-color: #d8d8de;
 }
@@ -165,7 +167,7 @@ body
 
 .grid_col_5-first-2-2
 {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .grid_col_5-first-2-2 > .panel:nth-child(1)
@@ -260,8 +262,10 @@ body
 
 .copyright 
 {
+    background-color: #16171b;
     padding: 10px;
-    color: #606060;
+    color: #979797;
+    font-size: 13px;
 }
 
 #login-form
@@ -285,4 +289,53 @@ body
     transition: all .4s ease;
     color: red;
     margin-top: 10px;
+}
+
+#moviesApi > .flex 
+{
+    flex-direction: column;    
+}
+
+@media (min-width: 768px) {
+    
+    .section
+    {
+        min-height: 95dvh;
+        padding: 5%;   
+    }
+    
+    #moviesApi > .flex 
+    {
+        flex-direction: row;
+    }
+    
+    .grid_col_5-first-2-2
+    {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .grid_col_5-first-2-2 > .panel:nth-child(1)
+    {
+        grid-column: span 2;
+        grid-row: span 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid_col_5-first-2-2 > .panel:nth-child(1) .panel-body 
+    {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .grid_col_5-first-2-2 > .panel:nth-last-child(1)
+    {
+        display: none;
+    }
+    
+    #error
+    {
+        background-color: transparent;
+    }
 }
