@@ -1,29 +1,28 @@
-# Portfolio &#8226; Projekt JS
+# Portfolio &#8226; JS Project
 
-## Autor
+## Author
 - [Grzegorz_Kocik]
 
-### Wprowadzenie
-Projekt jest jedną ze stron portfolio. Głównie skupiam się w nim na elementach w czystym JavaScript.
-Korzystam jedynie z biblioteki [crypto-js] w formularzu logowania.
+### Introduction
+The project is one of the portfolio pages, mainly focusing on elements in pure JavaScript. The only library used is [crypto-js] for the login form.
 
-### Technologie
+### Technologies
 - HTML
 - CSS
 - JavaScript
 
-### Użyte biblioteki
+### Used Libraries
 - [crypto-js]
 
-#### Spis treści
-- Szybki Quizz. Pytania pobierane z obiektu w js.
-- Pobieranie bazy filmów (API). Wykorzystanie fetch do pobrania filmów poprzez API. Dodana możliwość polubienia wyników.
-- CSS Grid - manipulacja. Manipulacja klasami.
-- Upload pliku. Manipulacja DOM, animacja.
-- Zmień kolor tej sekcji. Zabawa.
-- Nie klikaj tego przycisku. Zabawa
-- Background Video. Video odtwarzane jako tło, start w momencie ukazania się video w polu widzenia.
-- Logowanie. Wykorzystuje algorytm SHA-256 [crypto-js], nie posiada informacji login/password w funkcji.
+#### Table of Contents
+- Quick Quiz. Questions retrieved from an object in js.
+- Movie database retrieval (API). Using fetch to retrieve movies through API. Added ability to like results.
+- CSS Grid - manipulation. Class manipulation.
+- File upload. DOM manipulation, animation.
+- Change the color of this section. Fun.
+- Do not click this button. Fun.
+- Background Video. Video played as background, starting when the video is in the field of view.
+- Login. Utilizes SHA-256 algorithm [crypto-js], does not have login/password information in the function.
 
 [Grzegorz_Kocik]: <https://github.com/typodgrafiki>
 [crypto-js]: <https://github.com/brix/crypto-js>
